@@ -1,0 +1,19 @@
+[project]
+name = "venmo-auto-transfer-neuer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Radian LLC",email = "contact+venmo-auto-transfer-neuer@radian.codes"}
+]
+requires-python = ">=3.14, <4"
+dependencies = [
+    "venmo-auto-cashout @ git+https://github.com/evanpurkhiser/venmo-auto-cashout.git",
+    "python-dotenv (>=1.2.4,<2.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
